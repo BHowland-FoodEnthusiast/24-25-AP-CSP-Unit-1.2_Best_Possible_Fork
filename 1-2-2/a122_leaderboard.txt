@@ -1,3 +1,9 @@
 Pat,50
 Jack,42
 Jill,38
+shnuts,6
+Shnutties,4
+Shnuts,4
+Jack,1
+Shnuts,0
+Jill,0
