@@ -1,10 +1,10 @@
 import turtle as trtl
-
+import random as rand
 #initalize variables
 wn = trtl.Screen()
 maze_painter = trtl.Turtle()
-length = 10
-path_width = 15
+length = 20
+path_width = 10
 
 #setup turtle
 maze_painter.left(90)
@@ -24,6 +24,8 @@ def add_barrier():
     maze_painter.left(90)
 
 for wall in range(21):
+    door = rand.randint(path_width * 2, (length - path_width * 2))
+    barrier = rand.randint(path_width * 2, (length - path_width * 2))
     maze_painter.forward(length/3)
     maze_painter.penup()
     maze_painter.forward(path_width)
