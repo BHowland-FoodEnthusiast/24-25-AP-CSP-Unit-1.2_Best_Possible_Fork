@@ -24,8 +24,8 @@ def add_barrier():
     maze_painter.left(90)
 
 for wall in range(21):
-    door = rand.randint(path_width * 2, (length - path_width * 2))
-    barrier = rand.randint(path_width * 2, (length - path_width * 2))
+    door = rand.randint(path_width * 2, ((length - path_width) * 2))
+    barrier = rand.randint(path_width * 2, ((length - path_width) * 2))
     maze_painter.forward(length/3)
     maze_painter.penup()
     maze_painter.forward(path_width)
